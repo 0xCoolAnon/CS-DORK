@@ -40,7 +40,7 @@ try:
     nyx = 0
     ny2 = 10  # Initial value for the number of results
     while nyx < ny2:
-        for i in search(ny1, num=ny2, start=nyx, stop=None, pause=ny3):
+        for i in search(ny1, num_results=ny2, start=nyx, stop=None, pause=ny3):
             with open(custom_file_path, 'a') as f:
                 f.write(f'{i}\n')
             nyx += 1
