@@ -1,7 +1,6 @@
 # CODER: 0xCoolAnon
 # This file have a virus
 
-
 from googlesearch import search
 from colorama import Fore
 import os
@@ -40,7 +39,7 @@ try:
     nyx = 0
     ny2 = 10  # Initial value for the number of results
     while nyx < ny2:
-        for i in search(ny1, num_results=ny2, start=nyx, stop=None, pause=ny3):
+        for i in search(ny1, num_results=ny2):
             with open(custom_file_path, 'a') as f:
                 f.write(f'{i}\n')
             nyx += 1
@@ -60,4 +59,4 @@ try:
 except ValueError:
     exit(f'{Fore.RED}Exit! Input error')
 except KeyboardInterrupt:
-    exit(f'\n\n{Fore.RED}Exit!')
+    exit(f'\n\n{Fore.RED}Exit!'
