@@ -1,62 +1,11 @@
 # CODER: 0xCoolAnon
 # This file have a virus
 
-from googlesearch import search
-from colorama import Fore
-import os
-
-def banners():
-    print()
-    print(Fore.LIGHTWHITE_EX + "       ░█████╗░░██████╗  ░█████╗░██████╗░███████╗░██╗░░░░░░░██╗")
-    print(Fore.LIGHTWHITE_EX + "       ██╔══██╗██╔════╝  ██╔══██╗██╔══██╗██╔════╝░██║░░██╗░░██║")
-    print(Fore.LIGHTWHITE_EX + "       ██║░░╚═╝╚█████╗░  ██║░░╚═╝██████╔╝█████╗░░░╚██╗████╗██╔╝")
-    print(Fore.LIGHTWHITE_EX + "       ██║░░██╗░╚═══██╗  ██║░░██╗██╔══██╗██╔══╝░░░░████╔═████║░")
-    print(Fore.LIGHTWHITE_EX + "       ╚█████╔╝██████╔╝  ╚█████╔╝██║░░██║███████╗░░╚██╔╝░╚██╔╝░")
-    print(Fore.LIGHTWHITE_EX + "       ░╚════╝░╚═════╝░  ░╚════╝░╚═╝░░╚═╝╚══════╝░░░╚═╝░░░╚═╝░░")
-    print(Fore.YELLOW + "══════════════════╦═══════════════════════════╦═══════════════════")
-    print(Fore.YELLOW + "      ╔════════════╩═══════════════════════════╩════════════╗")
-    print(Fore.YELLOW + "      ║ • " + Fore.GREEN + "CODER " + Fore.RED + "   |" + Fore.LIGHTYELLOW_EX + "           0xCOOLANON                  " + Fore.YELLOW + " ║")
-    print(Fore.YELLOW + "      ║ • " + Fore.GREEN + "GITHUB " + Fore.RED + "  |" + Fore.LIGHTYELLOW_EX + "      GITHUB.COM/0XCOOLANON            " + Fore.YELLOW + " ║")
-    print(Fore.YELLOW + "      ╚═════════════════════════════════════════════════════╝")
-
-banners()
-try:
-    # Prompt the user for inputs
-    ny1 = input(f"{Fore.YELLOW}\n[💀] #OpsHebrew [💀]{Fore.RED} - {Fore.GREEN}Dork: {Fore.CYAN}")
-    ny2 = int(input(f"{Fore.YELLOW}\n[💀] #OpsHebrew [💀]{Fore.RED} - {Fore.GREEN}Amount: {Fore.CYAN}"))
-    ny3 = int(input(f"{Fore.YELLOW}\n[💀] #OpsHebrew [💀]{Fore.RED} - {Fore.GREEN}Time (Minutes): {Fore.CYAN}"))
-
-    # Convert minutes to seconds
-    ny3 = ny3 * 60
-
-    custom_file_name = input(f"{Fore.YELLOW}\n[💀] #OpsHebrew [💀]{Fore.RED} - {Fore.GREEN}File Name You Want to Create: {Fore.CYAN}")
-    print(f'{Fore.BLUE}\n═════════════════════════════════════════════')
-
-    result = "result"  # Specify the name of the directory
-    os.makedirs(result, exist_ok=True)
-    custom_file_path = os.path.join('result', custom_file_name)
-
-    nyx = 0
-    ny2 = 10  # Initial value for the number of results
-    while nyx < ny2:
-        for i in search(ny1, num_results=ny2):
-            with open(custom_file_path, 'a') as f:
-                f.write(f'{i}\n')
-            nyx += 1
-            print(f'{Fore.WHITE}       {nyx}) {Fore.CYAN}{i}')
-            if nyx >= ny2:
-                break
-
-        if nyx < ny2:
-            prompt = input(f"{Fore.YELLOW}\n[💀] #OpsHebrew [💀]{Fore.RED} - {Fore.GREEN}Continue searching for more results? (Y/N): {Fore.CYAN}")
-            if prompt.lower() != 'y':
-                break
-
-        ny2 += 10  # Increase the number of results by 10 for each iteration
-
-    print(f'{Fore.BLUE}═════════════════════════════════════════════')
-    print(f'{Fore.YELLOW}\n[D0rK!] {Fore.GREEN}Saved: {Fore.GREEN}{custom_file_path}')
-except ValueError:
-    exit(f'{Fore.RED}Exit! Input error')
-except KeyboardInterrupt:
-    exit(f'\n\n{Fore.RED}Exit!')
+import base64, codecs
+magic = 'ZnJvbSBnb29nbGVzZWFyY2ggaW1wb3J0IHNlYXJjaA0KZnJvbSBjb2xvcmFtYSBpbXBvcnQgRm9yZQ0KaW1wb3J0IG9zDQoNCmRlZiBiYW5uZXJzKCk6DQogICAgcHJpbnQoKQ0KICAgIHByaW50KEZvcmUuTElHSFRXSElURV9FWCArICIgICAgICAg4paR4paI4paI4paI4paI4paI4pWX4paR4paR4paI4paI4paI4paI4paI4paI4pWX4oCD4oCD4paR4paI4paI4paI4paI4paI4pWX4paR4paI4paI4paI4paI4paI4paI4pWX4paR4paI4paI4paI4paI4paI4paI4paI4pWX4paR4paI4paI4pWX4paR4paR4paR4paR4paR4paR4paR4paI4paI4pWXIikNCiAgICBwcmludChGb3JlLkxJR0hUV0hJVEVfRVggKyAiICAgICAgIOKWiOKWiOKVlOKVkOKVkOKWiOKWiOKVl+KWiOKWiOKVlOKVkOKVkOKVkOKVkOKVneKAg+KAg+KWiOKWiOKVlOKVkOKVkOKWiOKWiOKVl+KWiOKWiOKVlOKVkOKVkOKWiOKWiOKVl+KWiOKWiOKVlOKVkOKVkOKVkOKVkOKVneKWkeKWiOKWiOKVkeKWkeKWkeKWiOKWiOKVl+KWkeKWkeKWiOKWiOKVkSIpDQogICAgcHJpbnQoRm9yZS5MSUdIVFdISVRFX0VYICsgIiAgICAgICDilojilojilZHilpHilpHilZrilZDilZ3ilZrilojilojilojilojilojilZfilpHigIPigIPilojilojilZHilpHilpHilZrilZDilZ3ilojilojilojilojilojilojilZTilZ3ilojilojilojilojilojilZfilpHilpHilpHilZrilojilojilZfilojilojilojilojilZfilojilojilZTilZ0iKQ0KICAgIHByaW50KEZvcmUuTElHSFRXSElURV9FWCArICIgICAgICAg4paI4paI4pWR4paR4paR4paI4paI4pWX4paR4pWa4pWQ4pWQ4pWQ4paI4paI4pWX4oCD4oCD4paI4paI4pWR4paR4paR4paI4paI4pWX4paI4paI4pWU4pWQ4pWQ4paI4paI4pWX4paI4paI4pWU4pWQ4pWQ4pWd4paR4paR4paR4paR4paI4paI4paI4paI4pWU4pWQ4paI4paI4paI4paI4pWR4paRIikNCiAgICBwcmludChGb3JlLkxJR0hUV0hJVEVfRVggKyAiICAgICAgIOKVmuKWiOKWiOKWiOKWiOKWiOKVlOKVneKWiOKWiOKWiOKWiOKWiOKWiOKVlOKVneKAg+KAg+KVmuKWiOKWiOKWiOKWiOKWiOKVlOKVneKWiOKWiOKVkeKWkeKWkeKWiOKWiOKVkeKWiOK'
+love = 'JvBXJvBXJvBXJvBXJvBXJvBXIy+XJxrXJxrXIzhXJvBXJvBXIyBXIarXJxrXIzhXJvBXJvBXIyBXIarXJxFVcQDbtVPNtpUWcoaDbEz9lMF5ZFHqVISqVFIESK0ILVPftVvNtVPNtVPQvycUvyMevyMQvyMQvyMQvyMQvyM3vycUvyMevyMQvyMQvyMQvyMQvyMQvyM3vycUvtVCvtVCvycUvyMevyMQvyMQvyMQvyMQvyM3vycUvyMevyMQvyM3vycUvycUvyMevyMQvyM3vyMevyMQvyMQvyMQvyMQvyMQvyMQvyM3vycUvycUvycUvyMevyMQvyM3vycUvycUvycUvyMevyMQvyM3vycUvycRvXD0XVPNtVUOlnJ50XRMipzHhJHIZGR9KVPftVhXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIchXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIchXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxBXIxPVcQDbtVPNtpUWcoaDbEz9lMF5MEHkZG1ptXlNvVPNtVPNt4cJH4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJc4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJc4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJKVvxAPvNtVPOjpzyhqPuTo3WyYyySGRkCIlNeVPVtVPNtVPQvyMRt4bPvVPVtXlOTo3WyYxqFEHIBVPftVxACERIFVPVtXlOTo3WyYyWSEPNeVPVtVPO8VvNeVRMipzHhGRyUFSEMEHkZG1qsEIttXlNvVPNtVPNtVPNtVPNjrRACG0kOGx9BVPNtVPNtVPNtVPNtVPNtVPNtVvNeVRMipzHhJHIZGR9KVPftVvQvyMRvXD0XVPNtVUOlnJ50XRMipzHhJHIZGR9KVPftVvNtVPNtVBXIxFQvtXVtVvNeVRMipzHhE1WSEH4tXlNvE0yHFSIPVPVtXlOTo3WyYyWSEPNeVPVtVUjvVPftEz9lMF5ZFHqVISySGRkCI19SJPNeVPVtVPNtVPOUFIEVIHVhD09AYmOLD09CGRSBG04tVPNtVPNtVPNtVPNvVPftEz9lMF5MEHkZG1ptXlNvVBXIxFVcQDbtVPNtpUWcoaDbEz9lMF5MEHkZG1ptXlNvVPNtVPNt4cJn4c'
+god = 'WQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWdIikNCg0KYmFubmVycygpDQp0cnk6DQogICAgIyBQcm9tcHQgdGhlIHVzZXIgZm9yIGlucHV0cw0KICAgIG55MSA9IGlucHV0KGYie0ZvcmUuWUVMTE9XfVxuW/CfkoBdICNPcHNIZWJyZXcgW/CfkoBde0ZvcmUuUkVEfSAtIHtGb3JlLkdSRUVOfURvcms6IHtGb3JlLkNZQU59IikNCiAgICBueTIgPSBpbnQoaW5wdXQoZiJ7Rm9yZS5ZRUxMT1d9XG5b8J+SgF0gI09wc0hlYnJldyBb8J+SgF17Rm9yZS5SRUR9IC0ge0ZvcmUuR1JFRU59QW1vdW50OiB7Rm9yZS5DWUFOfSIpKQ0KICAgIG55MyA9IGludChpbnB1dChmIntGb3JlLllFTExPV31cblvwn5KAXSAjT3BzSGVicmV3IFvwn5KAXXtGb3JlLlJFRH0gLSB7Rm9yZS5HUkVFTn1UaW1lIChNaW51dGVzKToge0ZvcmUuQ1lBTn0iKSkNCg0KICAgICMgQ29udmVydCBtaW51dGVzIHRvIHNlY29uZHMNCiAgICBueTMgPSBueTMgKiA2MA0KDQogICAgY3VzdG9tX2ZpbGVfbmFtZSA9IGlucHV0KGYie0ZvcmUuWUVMTE9XfVxuW/CfkoBdICNPcHNIZWJyZXcgW/CfkoBde0ZvcmUuUkVEfSAtIHtGb3JlLkdSRUVOfUZpbGUgTmFtZSBZb3UgV2FudCB0byBDcmVhdGU6IHtGb3JlLkNZQU59IikNCiAgICBwcmludChmJ3tGb3JlLkJMVUV9XG7ilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZAnKQ0KDQogICAgcmVzdWx0ID0gInJlc3VsdCIgICMgU3BlY2lmeSB0aGUgbmFtZSBvZiB0aGUgZGlyZWN0b3J5DQogICAgb3MubWFrZWRpcnMocmVzdWx0LCBleGlzdF9vaz1UcnVlKQ0KICAgIGN1c3RvbV9maWxlX3BhdGggPSBvcy5wYXRoLmpvaW4oJ3Jlc3VsdCcsIGN1c3RvbV9maWxlX25hbWUpDQoNCiAgICBueXggPSAwD'
+destiny = 'DbtVPNtoaxlVQ0tZGNtVPZtFJ5cqTyuoPO2LJk1MFOzo3VtqTuyVT51oJWypvOiMvOlMKA1oUEmQDbtVPNtq2ucoTHtoay4VQjtoaxlBt0XVPNtVPNtVPOzo3VtnFOcovOmMJSlL2tboaxkYPO0oTD9VzAioFVfVTkuozp9VzIhVvjtoaIgCJ55Zvjtp3EupaD9oay4YPOmqT9jCH5iozHfVUOuqKAyCJ55Zlx6QDbtVPNtVPNtVPNtVPO3nKEbVT9jMJ4bL3ImqT9gK2McoTIspTS0nPjtW2RaXFOuplOzBt0XVPNtVPNtVPNtVPNtVPNtVTLhq3WcqTHbMvq7nK1povpcQDbtVPNtVPNtVPNtVPOhrKttXm0tZD0XVPNtVPNtVPNtVPNtpUWcoaDbMvq7Ez9lMF5KFRyHEK0tVPNtVPNtr255rU0cVUgTo3WyYxAMDH59r2y9WlxAPvNtVPNtVPNtVPNtVTyzVT55rPN+CFOhrGV6QDbtVPNtVPNtVPNtVPNtVPNtLaWyLJfAPt0XVPNtVPNtVPOcMvOhrKttCPOhrGV6QDbtVPNtVPNtVPNtVPOjpz9gpUDtCFOcoaO1qPuzVagTo3WyYyySGRkCI31poyija5XNKFNwG3OmFTIvpzI3VSija5XNKKgTo3WyYyWSEU0tYFO7Ez9lMF5UHxISGa1Qo250nJ51MFOmMJSlL2ucozptMz9lVT1ipzHtpzImqJk0pm8tXSxiGvx6VUgTo3WyYxAMDH59VvxAPvNtVPNtVPNtVPNtVTyzVUOlo21jqP5fo3qypvtcVPR9VPq5WmbAPvNtVPNtVPNtVPNtVPNtVPOvpzIunj0XQDbtVPNtVPNtVT55ZvNeCFNkZPNtVlOWozAlMJSmMFO0nTHtoaIgLzIlVT9zVUWyp3IfqUZtLaxtZGNtMz9lVTIuL2ttnKEypzS0nJ9hQDbAPvNtVPOjpzyhqPuzW3gTo3WyYxWZIHI94cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJD4cJDWlxAPvNtVPOjpzyhqPuzW3gTo3WyYyySGRkCI31poygRZUWYVI0tr0MipzHhE1WSEH59H2S2MJD6VUgTo3WyYxqFEHIBsKgwqKA0o21sMzyfMI9jLKEbsFpcQDcyrTAypUDtIzSfqJISpaWipwbAPvNtVPOyrTy0XTLar0MipzHhHxIRsHI4nKDuVRyhpUI0VTIlpz9lWlxAPzI4L2IjqPOYMKyvo2SlMRyhqTIlpaIjqQbAPvNtVPOyrTy0XTLaKT5poagTo3WyYyWSEU1SrTy0VFpc'
+joy = '\x72\x6f\x74\x31\x33'
+trust = eval('\x6d\x61\x67\x69\x63') + eval('\x63\x6f\x64\x65\x63\x73\x2e\x64\x65\x63\x6f\x64\x65\x28\x6c\x6f\x76\x65\x2c\x20\x6a\x6f\x79\x29') + eval('\x67\x6f\x64') + eval('\x63\x6f\x64\x65\x63\x73\x2e\x64\x65\x63\x6f\x64\x65\x28\x64\x65\x73\x74\x69\x6e\x79\x2c\x20\x6a\x6f\x79\x29')
+eval(compile(base64.b64decode(eval('\x74\x72\x75\x73\x74')),'<string>','exec'))
