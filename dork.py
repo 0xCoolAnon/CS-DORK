@@ -33,7 +33,7 @@ try:
     custom_file_path = os.path.join('result', custom_file_name)
 
     nyx = 0
-    for i in search(ny1, tld="com", lang="en", num=int(ny2), start=0, stop=None, pause=int(ny3)):
+    for i in search(ny1, lang="en", num=int(ny2), start=0, stop=None, pause=int(ny3)):
         with open(custom_file_path, 'a') as f:
             f.write(f'{i}\n')
         nyx += 1
