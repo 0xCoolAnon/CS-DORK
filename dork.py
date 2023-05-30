@@ -59,4 +59,4 @@ try:
 except ValueError:
     exit(f'{Fore.RED}Exit! Input error')
 except KeyboardInterrupt:
-    exit(f'\n\n{Fore.RED}Exit!'
+    exit(f'\n\n{Fore.RED}Exit!')
